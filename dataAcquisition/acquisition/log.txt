@@ -1,334 +1,180 @@
-Mosue Pressed: 1at: 107018144
-Mosue Released: 1at: 107018232
-Mosue Clicked: 1at: 107018232
-Mosue Pressed: 1at: 107019128
-Mosue Released: 1at: 107019192
-Mosue Clicked: 1at: 107019192
-Mosue Pressed: 1at: 107023176
-Mosue Released: 1at: 107023248
-Mosue Clicked: 1at: 107023248
-Mosue Pressed: 1at: 107023304
-Mosue Released: 1at: 107023384
-Mosue Pressed: 1at: 107026864
-Mosue Released: 1at: 107026928
-Mosue Pressed: 1at: 107027000
-Mosue Released: 1at: 107027080
-Mosue Pressed: 3at: 107030120
-Mosue Released: 3at: 107030208
-Mosue Clicked: 1at: 107030208
-Mosue Pressed: 1at: 107031928
-Mosue Released: 1at: 107032024
-Mosue Pressed: 3at: 107037832
-Mosue Released: 3at: 107037920
-Mosue Pressed: 3at: 107038016
-Mosue Released: 3at: 107038088
-Mosue Pressed: 3at: 107043472
-Mosue Released: 3at: 107043544
-Mosue Pressed: 3at: 107043632
-Mosue Released: 3at: 107043696
-Mosue Pressed: 1at: 107045593
-Mosue Released: 1at: 107045672
-Mosue Pressed: 1at: 107045748
-Mosue Released: 1at: 107045824
-Mosue Pressed: 1at: 107050200
-Mosue Released: 1at: 107050296
-Mosue Pressed: 1at: 107050344
-Mosue Released: 1at: 107050408
-Mosue Pressed: 2at: 107052416
-Mosue Released: 2at: 107052488
-Mosue Clicked: 1at: 107052488
-Mosue Pressed: 2at: 107052576
-Mosue Released: 2at: 107052648
-Mosue Clicked: 2at: 107052648
-Mosue Pressed: 2at: 107057104
-Mosue Released: 2at: 107057248
-Mosue Clicked: 1at: 107057248
-Mosue Pressed: 2at: 107057330
-Mosue Released: 2at: 107057408
-Mosue Clicked: 1at: 107057408
-Mosue Pressed: 2at: 107061048
-Mosue Released: 2at: 107061128
-Mosue Clicked: 1at: 107061128
-Mosue Pressed: 1at: 107064408
-Mosue Released: 1at: 107064496
-Mosue Clicked: 1at: 107064496
-Mosue Pressed: 3at: 107066280
-Mosue Released: 3at: 107066408
-Mosue Clicked: 1at: 107066408
-Mosue Pressed: 1at: 107068840
-Mosue Released: 1at: 107068936
-Mosue Clicked: 1at: 107068936
-Mosue Pressed: 3at: 107072480
-Mosue Released: 3at: 107072560
-Mosue Clicked: 1at: 107072560
-Mosue Pressed: 3at: 107072640
-Mosue Released: 3at: 107072712
-Mosue Clicked: 2at: 107072712
-Mosue Pressed: 3at: 107076832
-Mosue Released: 3at: 107076936
-Mosue Clicked: 1at: 107076936
-Mosue Pressed: 3at: 107077016
-Mosue Released: 3at: 107077088
-Mosue Clicked: 2at: 107077088
-Mosue Pressed: 1at: 107080320
-Mosue Released: 1at: 107080368
-Mosue Clicked: 1at: 107080368
-Mosue Pressed: 1at: 107080448
-Mosue Released: 1at: 107080528
-Mosue Pressed: 1at: 107082216
-Mosue Released: 1at: 107082312
-Mosue Pressed: 1at: 107084424
-Mosue Released: 1at: 107084496
-Mosue Pressed: 1at: 107086584
-Mosue Released: 1at: 107086680
-Mosue Pressed: 1at: 107089888
-Mosue Released: 1at: 107089984
-Mosue Pressed: 1at: 107090048
-Mosue Released: 1at: 107090128
-Mosue Pressed: 3at: 107092920
-Mosue Released: 3at: 107093000
-Mosue Pressed: 3at: 107093104
-Mosue Released: 3at: 107093160
-Mosue Pressed: 3at: 107095120
-Mosue Released: 3at: 107095232
-Mosue Pressed: 3at: 107095328
-Mosue Released: 3at: 107095432
-Mosue Pressed: 3at: 107096456
-Mosue Released: 3at: 107096552
-Mosue Pressed: 1at: 107098160
-Mosue Released: 1at: 107098224
-Mosue Clicked: 1at: 107098224
-Mosue Pressed: 1at: 107100656
-Mosue Released: 1at: 107100760
-Mosue Pressed: 1at: 107100864
-Mosue Released: 1at: 107100912
-Mosue Pressed: 1at: 107102472
-Mosue Released: 1at: 107102616
-Mosue Pressed: 1at: 107104048
-Mosue Released: 1at: 107104152
-Mosue Pressed: 1at: 107105496
-Mosue Released: 1at: 107107192
-Mosue Pressed: 1at: 107109448
-Mosue Released: 1at: 107110984
-Mosue Pressed: 2at: 107114704
-Mosue Released: 2at: 107114776
-Mosue Pressed: 2at: 107116120
-Mosue Released: 2at: 107116216
-Mosue Pressed: 2at: 107117352
-Mosue Released: 2at: 107117440
-Mosue Pressed: 2at: 107118392
-Mosue Released: 2at: 107118512
-Mosue Pressed: 2at: 107119304
-Mosue Released: 2at: 107119392
-Mosue Pressed: 2at: 107119512
-Mosue Released: 2at: 107119576
-Mosue Pressed: 1at: 107121664
-Mosue Released: 1at: 107121760
-Mosue Pressed: 3at: 107122808
-Mosue Released: 3at: 107122912
-Mosue Pressed: 1at: 107123864
-Mosue Released: 1at: 107123960
-Mosue Pressed: 1at: 107125040
-Mosue Released: 1at: 107125136
-Mosue Clicked: 1at: 107125136
-Mosue Pressed: 1at: 107127144
-Mosue Released: 1at: 107127240
-Mosue Clicked: 1at: 107127240
-Mosue Pressed: 1at: 107129216
-Mosue Released: 1at: 107129312
-Mosue Clicked: 1at: 107129312
-Mosue Pressed: 1at: 107130664
-Mosue Released: 1at: 107130768
-Mosue Clicked: 1at: 107130768
-Mosue Pressed: 1at: 107132048
-Mosue Released: 1at: 107132200
-Mosue Clicked: 1at: 107132200
-Mosue Pressed: 1at: 107133392
-Mosue Released: 1at: 107133512
-Mosue Clicked: 1at: 107133512
-Mosue Pressed: 3at: 107134424
-Mosue Released: 3at: 107134489
-Mosue Clicked: 1at: 107134489
-Mosue Pressed: 1at: 107135512
-Mosue Released: 1at: 107135600
-Mosue Clicked: 1at: 107135600
-Mosue Pressed: 3at: 107137185
-Mosue Released: 3at: 107137288
-Mosue Clicked: 1at: 107137288
-Mosue Pressed: 3at: 107137360
-Mosue Released: 3at: 107137432
-Mosue Clicked: 2at: 107137432
-Mosue Pressed: 1at: 107138736
-Mosue Released: 1at: 107138808
-Mosue Clicked: 1at: 107138808
-Mosue Pressed: 1at: 107138904
-Mosue Released: 1at: 107138984
-Mosue Clicked: 2at: 107138984
-Mosue Pressed: 1at: 107140336
-Mosue Released: 1at: 107140448
-Mosue Clicked: 1at: 107140448
-Mosue Pressed: 1at: 107140528
-Mosue Released: 1at: 107140600
-Mosue Clicked: 2at: 107140600
-Mosue Pressed: 1at: 107143056
-Mosue Released: 1at: 107143144
-Mosue Clicked: 1at: 107143144
-Mosue Pressed: 1at: 107143224
-Mosue Released: 1at: 107143304
-Mosue Clicked: 2at: 107143304
-Mosue Pressed: 1at: 107144360
-Mosue Released: 1at: 107144456
-Mosue Clicked: 1at: 107144456
-Mosue Pressed: 1at: 107144560
-Mosue Released: 1at: 107144632
-Mosue Clicked: 2at: 107144632
-Mosue Pressed: 1at: 107145448
-Mosue Released: 1at: 107145528
-Mosue Clicked: 1at: 107145528
-Mosue Pressed: 1at: 107145624
-Mosue Released: 1at: 107145696
-Mosue Clicked: 2at: 107145696
-Mosue Pressed: 1at: 107145792
-Mosue Released: 1at: 107145848
-Mosue Clicked: 3at: 107145848
-Mosue Pressed: 1at: 107153488
-Mosue Released: 1at: 107153576
-Mosue Clicked: 1at: 107153576
-Mosue Pressed: 1at: 107153640
-Mosue Released: 1at: 107153728
-Mosue Clicked: 2at: 107153728
-Mosue Pressed: 1at: 107159648
-Mosue Released: 1at: 107159751
-Mosue Clicked: 1at: 107159751
-Mosue Pressed: 1at: 107162128
-Mosue Released: 1at: 107162224
-Mosue Clicked: 1at: 107162224
-Mosue Pressed: 1at: 107163408
-Mosue Released: 1at: 107163496
-Mosue Clicked: 1at: 107163496
-Mosue Pressed: 1at: 107163584
-Mosue Released: 1at: 107163656
-Mosue Clicked: 2at: 107163656
-Mosue Pressed: 1at: 107163736
-Mosue Released: 1at: 107163808
-Mosue Clicked: 3at: 107163808
-Mosue Pressed: 1at: 107163896
-Mosue Released: 1at: 107163968
-Mosue Clicked: 4at: 107163968
-Mosue Pressed: 1at: 107164051
-Mosue Released: 1at: 107164120
-Mosue Clicked: 5at: 107164120
-Mosue Pressed: 1at: 107166112
-Mosue Released: 1at: 107166192
-Mosue Clicked: 1at: 107166192
-Mosue Pressed: 1at: 107166272
-Mosue Released: 1at: 107166360
-Mosue Clicked: 2at: 107166360
-Mosue Pressed: 1at: 107166448
-Mosue Released: 1at: 107166536
-Mosue Clicked: 3at: 107166536
-Mosue Pressed: 1at: 107166608
-Mosue Released: 1at: 107166696
-Mosue Clicked: 4at: 107166696
-Mosue Pressed: 1at: 107166773
-Mosue Released: 1at: 107166856
-Mosue Clicked: 1at: 107166856
-Mosue Pressed: 1at: 107166930
-Mosue Released: 1at: 107167016
-Mosue Clicked: 1at: 107167016
-Mosue Pressed: 1at: 107170840
-Mosue Released: 1at: 107170952
-Mosue Clicked: 1at: 107170952
-Mosue Pressed: 1at: 107171024
-Mosue Released: 1at: 107171104
-Mosue Clicked: 2at: 107171104
-Mosue Pressed: 1at: 107171192
-Mosue Released: 1at: 107171264
-Mosue Clicked: 3at: 107171264
-Mosue Pressed: 1at: 107171352
-Mosue Released: 1at: 107171432
-Mosue Clicked: 4at: 107171432
-Mosue Pressed: 1at: 107171520
-Mosue Released: 1at: 107171608
-Mosue Clicked: 5at: 107171608
-Mosue Pressed: 1at: 107171688
-Mosue Released: 1at: 107171760
-Mosue Clicked: 6at: 107171760
-Mosue Pressed: 1at: 107174224
-Mosue Released: 1at: 107174296
-Mosue Clicked: 1at: 107174296
-Mosue Pressed: 1at: 107174392
-Mosue Released: 1at: 107174472
-Mosue Clicked: 2at: 107174472
-Mosue Pressed: 1at: 107174568
-Mosue Released: 1at: 107174648
-Mosue Clicked: 3at: 107174648
-Mosue Pressed: 1at: 107174744
-Mosue Released: 1at: 107174816
-Mosue Clicked: 4at: 107174816
-Mosue Pressed: 1at: 107174912
-Mosue Released: 1at: 107174976
-Mosue Clicked: 5at: 107174976
-Mosue Pressed: 1at: 107175064
-Mosue Released: 1at: 107175136
-Mosue Clicked: 6at: 107175136
-Mosue Pressed: 1at: 107177160
-Mosue Released: 1at: 107177248
-Mosue Clicked: 1at: 107177248
-Mosue Pressed: 1at: 107178248
-Mosue Released: 1at: 107178344
-Mosue Clicked: 1at: 107178344
-Mosue Pressed: 1at: 107178432
-Mosue Released: 1at: 107178528
-Mosue Clicked: 2at: 107178528
-Mosue Pressed: 1at: 107178616
-Mosue Released: 1at: 107178704
-Mosue Clicked: 3at: 107178704
-Mosue Pressed: 1at: 107178776
-Mosue Released: 1at: 107178866
-Mosue Clicked: 4at: 107178866
-Mosue Pressed: 1at: 107178944
-Mosue Released: 1at: 107179016
-Mosue Clicked: 5at: 107179016
-Mosue Pressed: 3at: 107181120
-Mosue Released: 3at: 107181209
-Mosue Clicked: 1at: 107181209
-Mosue Pressed: 3at: 107181296
-Mosue Released: 3at: 107181376
-Mosue Clicked: 2at: 107181376
-Mosue Pressed: 3at: 107181456
-Mosue Released: 3at: 107181528
-Mosue Clicked: 3at: 107181528
-Mosue Pressed: 3at: 107181624
-Mosue Released: 3at: 107181704
-Mosue Clicked: 4at: 107181704
-Mosue Pressed: 3at: 107181787
-Mosue Released: 3at: 107181864
-Mosue Clicked: 5at: 107181864
-Mosue Pressed: 1at: 107182912
-Mosue Released: 1at: 107183000
-Mosue Clicked: 1at: 107183000
-Mosue Pressed: 2at: 107187720
-Mosue Released: 2at: 107187840
-Mosue Clicked: 1at: 107187840
-Mosue Pressed: 2at: 107187952
-Mosue Released: 2at: 107188024
-Mosue Clicked: 1at: 107188024
-Mosue Pressed: 2at: 107188152
-Mosue Released: 2at: 107188216
-Mosue Clicked: 2at: 107188216
-Mosue Pressed: 2at: 107188312
-Mosue Released: 2at: 107188384
-Mosue Clicked: 3at: 107188384
-Mosue Pressed: 1at: 107197400
-Mosue Released: 1at: 107198976
-Mosue Pressed: 1at: 107199544
-Mosue Released: 1at: 107200160
-Mosue Pressed: 1at: 107201024
-Mosue Released: 1at: 107202304
-Mosue Pressed: 1at: 107204288
-Mosue Released: 1at: 107204384
-Mosue Clicked: 1at: 107204384
-Mosue Pressed: 1at: 107205464
-Mosue Released: 1at: 107205568
-Mosue Clicked: 1at: 107205568
+Mosue Pressed: 1 at: 138382777
+Mosue Released: 1 at: 138382849
+Mosue Clicked: 1 at: 138382849
+Mosue Pressed: 1 at: 138389657
+Mosue Released: 1 at: 138389737
+Mosue Clicked: 1 at: 138389737
+Mosue Pressed: 2 at: 138392041
+Mosue Released: 2 at: 138392153
+Mosue Clicked: 1 at: 138392153
+Mosue Pressed: 1 at: 138399473
+Mosue Released: 1 at: 138402929
+Mosue Clicked: 1 at: 138402929
+Mosue Pressed: 2 at: 138406849
+Mosue Released: 2 at: 138406969
+Mosue Clicked: 1 at: 138406969
+Mosue Pressed: 2 at: 138409905
+Mosue Released: 2 at: 138409993
+Mosue Clicked: 1 at: 138409993
+Mosue Pressed: 2 at: 138411401
+Mosue Released: 2 at: 138411481
+Mosue Clicked: 1 at: 138411481
+Mosue Pressed: 2 at: 138411617
+Mosue Released: 2 at: 138411657
+Mosue Clicked: 1 at: 138411657
+Mosue Pressed: 3 at: 138414825
+Mosue Released: 3 at: 138414929
+Mosue Clicked: 1 at: 138414929
+Mosue Pressed: 3 at: 138415049
+Mosue Released: 3 at: 138415145
+Mosue Clicked: 1 at: 138415145
+Mosue Pressed: 2 at: 138419617
+Mosue Dragged: 965, 341 at: 138419969
+Mosue Dragged: 965, 344 at: 138419977
+Mosue Dragged: 966, 346 at: 138419985
+Mosue Dragged: 967, 347 at: 138419993
+Mosue Dragged: 967, 349 at: 138420001
+Mosue Dragged: 967, 351 at: 138420009
+Mosue Dragged: 967, 353 at: 138420017
+Mosue Dragged: 968, 355 at: 138420025
+Mosue Dragged: 968, 356 at: 138420033
+Mosue Dragged: 968, 358 at: 138420041
+Mosue Dragged: 968, 359 at: 138420049
+Mosue Dragged: 968, 360 at: 138420057
+Mosue Dragged: 968, 361 at: 138420065
+Mosue Dragged: 968, 362 at: 138420073
+Mosue Dragged: 968, 363 at: 138420089
+Mosue Dragged: 968, 364 at: 138420097
+Mosue Dragged: 968, 365 at: 138420105
+Mosue Dragged: 968, 367 at: 138420113
+Mosue Dragged: 968, 368 at: 138420121
+Mosue Dragged: 968, 369 at: 138420130
+Mosue Dragged: 968, 371 at: 138420137
+Mosue Dragged: 968, 373 at: 138420145
+Mosue Dragged: 968, 375 at: 138420153
+Mosue Dragged: 968, 376 at: 138420161
+Mosue Dragged: 968, 378 at: 138420169
+Mosue Dragged: 968, 381 at: 138420177
+Mosue Dragged: 968, 383 at: 138420185
+Mosue Dragged: 969, 386 at: 138420193
+Mosue Dragged: 969, 388 at: 138420201
+Mosue Dragged: 969, 390 at: 138420209
+Mosue Dragged: 969, 393 at: 138420217
+Mosue Dragged: 969, 395 at: 138420225
+Mosue Dragged: 969, 397 at: 138420233
+Mosue Dragged: 969, 399 at: 138420241
+Mosue Dragged: 969, 401 at: 138420253
+Mosue Dragged: 970, 403 at: 138420257
+Mosue Dragged: 970, 405 at: 138420266
+Mosue Dragged: 970, 408 at: 138420274
+Mosue Dragged: 970, 410 at: 138420281
+Mosue Dragged: 970, 412 at: 138420289
+Mosue Dragged: 970, 414 at: 138420297
+Mosue Dragged: 970, 416 at: 138420305
+Mosue Dragged: 970, 419 at: 138420313
+Mosue Dragged: 970, 421 at: 138420321
+Mosue Dragged: 970, 423 at: 138420329
+Mosue Dragged: 970, 426 at: 138420337
+Mosue Dragged: 970, 429 at: 138420345
+Mosue Dragged: 970, 431 at: 138420353
+Mosue Dragged: 970, 434 at: 138420361
+Mosue Dragged: 971, 437 at: 138420369
+Mosue Dragged: 971, 439 at: 138420377
+Mosue Dragged: 971, 441 at: 138420385
+Mosue Dragged: 971, 444 at: 138420393
+Mosue Dragged: 971, 446 at: 138420401
+Mosue Dragged: 971, 448 at: 138420409
+Mosue Dragged: 971, 450 at: 138420417
+Mosue Dragged: 971, 453 at: 138420425
+Mosue Dragged: 971, 455 at: 138420433
+Mosue Dragged: 971, 456 at: 138420441
+Mosue Dragged: 971, 458 at: 138420449
+Mosue Dragged: 971, 459 at: 138420457
+Mosue Dragged: 971, 460 at: 138420465
+Mosue Dragged: 971, 461 at: 138420481
+Mosue Released: 2 at: 138421377
+Mosue Pressed: 3 at: 138433049
+Mosue Dragged: 967, 461 at: 138433329
+Mosue Dragged: 963, 461 at: 138433337
+Mosue Dragged: 944, 461 at: 138433353
+Mosue Dragged: 932, 459 at: 138433361
+Mosue Dragged: 922, 457 at: 138433369
+Mosue Dragged: 912, 455 at: 138433377
+Mosue Dragged: 903, 453 at: 138433385
+Mosue Dragged: 895, 451 at: 138433393
+Mosue Dragged: 890, 451 at: 138433401
+Mosue Dragged: 889, 450 at: 138433409
+Mosue Dragged: 887, 450 at: 138433417
+Mosue Dragged: 886, 449 at: 138433425
+Mosue Dragged: 885, 448 at: 138433433
+Mosue Dragged: 884, 448 at: 138433441
+Mosue Dragged: 883, 447 at: 138433449
+Mosue Dragged: 881, 447 at: 138433457
+Mosue Dragged: 880, 446 at: 138433465
+Mosue Dragged: 878, 445 at: 138433473
+Mosue Dragged: 877, 444 at: 138433481
+Mosue Dragged: 875, 443 at: 138433489
+Mosue Dragged: 873, 442 at: 138433497
+Mosue Dragged: 872, 441 at: 138433505
+Mosue Dragged: 870, 440 at: 138433513
+Mosue Dragged: 868, 439 at: 138433521
+Mosue Dragged: 866, 437 at: 138433529
+Mosue Dragged: 864, 436 at: 138433537
+Mosue Dragged: 862, 435 at: 138433545
+Mosue Dragged: 860, 433 at: 138433553
+Mosue Dragged: 858, 432 at: 138433561
+Mosue Dragged: 856, 431 at: 138433569
+Mosue Dragged: 855, 430 at: 138433577
+Mosue Dragged: 854, 429 at: 138433585
+Mosue Dragged: 853, 429 at: 138433593
+Mosue Dragged: 852, 428 at: 138433601
+Mosue Dragged: 851, 427 at: 138433609
+Mosue Dragged: 850, 426 at: 138433617
+Mosue Dragged: 848, 425 at: 138433625
+Mosue Dragged: 847, 423 at: 138433633
+Mosue Dragged: 845, 422 at: 138433641
+Mosue Dragged: 843, 421 at: 138433649
+Mosue Dragged: 842, 419 at: 138433657
+Mosue Dragged: 841, 419 at: 138433665
+Mosue Dragged: 840, 417 at: 138433673
+Mosue Dragged: 838, 416 at: 138433682
+Mosue Dragged: 837, 414 at: 138433689
+Mosue Dragged: 835, 413 at: 138433697
+Mosue Dragged: 834, 411 at: 138433705
+Mosue Dragged: 832, 410 at: 138433713
+Mosue Dragged: 830, 408 at: 138433721
+Mosue Dragged: 828, 406 at: 138433729
+Mosue Dragged: 827, 404 at: 138433737
+Mosue Dragged: 825, 403 at: 138433745
+Mosue Dragged: 824, 402 at: 138433753
+Mosue Dragged: 822, 400 at: 138433761
+Mosue Dragged: 821, 399 at: 138433769
+Mosue Dragged: 820, 397 at: 138433777
+Mosue Dragged: 818, 395 at: 138433785
+Mosue Dragged: 816, 392 at: 138433793
+Mosue Dragged: 815, 391 at: 138433801
+Mosue Dragged: 813, 388 at: 138433809
+Mosue Dragged: 811, 384 at: 138433817
+Mosue Dragged: 808, 381 at: 138433825
+Mosue Dragged: 805, 377 at: 138433833
+Mosue Dragged: 801, 371 at: 138433841
+Mosue Dragged: 796, 364 at: 138433849
+Mosue Dragged: 792, 357 at: 138433857
+Mosue Dragged: 787, 350 at: 138433865
+Mosue Dragged: 783, 342 at: 138433873
+Mosue Dragged: 779, 335 at: 138433881
+Mosue Dragged: 775, 328 at: 138433889
+Mosue Dragged: 770, 324 at: 138433897
+Mosue Dragged: 766, 319 at: 138433905
+Mosue Dragged: 766, 315 at: 138433913
+Mosue Dragged: 765, 312 at: 138433921
+Mosue Released: 3 at: 138434081
+Mosue Pressed: 1 at: 138442921
+Mosue Released: 1 at: 138443009
+Mosue Clicked: 1 at: 138443009
+Mosue Pressed: 1 at: 138472809
+Mosue Released: 1 at: 138472873
+Mosue Clicked: 1 at: 138472873
+Mosue Pressed: 1 at: 138474105
+Mosue Released: 1 at: 138474185
+Mosue Clicked: 1 at: 138474185

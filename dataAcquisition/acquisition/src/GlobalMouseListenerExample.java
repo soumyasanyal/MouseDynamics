@@ -11,8 +11,9 @@ import org.jnativehook.NativeHookException;
 import org.jnativehook.mouse.NativeMouseEvent;
 import org.jnativehook.mouse.NativeMouseInputListener;
 import org.jnativehook.mouse.NativeMouseWheelEvent;
+import org.jnativehook.mouse.NativeMouseWheelListener;
 
-public class GlobalMouseListenerExample implements NativeMouseInputListener
+public class GlobalMouseListenerExample implements NativeMouseInputListener, NativeMouseWheelListener
 {
 	//write to file using bufferedWriter
 	private BufferedWriter getBufferedWriter()
@@ -44,7 +45,7 @@ public class GlobalMouseListenerExample implements NativeMouseInputListener
 		try
 		{
 			BufferedWriter bwriter = this.getBufferedWriter();
-			bwriter.write("Mosue Clicked: " + e.getClickCount() + "at: " + e.getWhen() + "\n");
+			bwriter.write("Mosue Clicked: " + e.getClickCount() + " at: " + e.getWhen() + "\n");
 			bwriter.close();
 		}
 		catch (IOException e1)
@@ -58,7 +59,7 @@ public class GlobalMouseListenerExample implements NativeMouseInputListener
 		try
 		{
 			BufferedWriter bwriter = this.getBufferedWriter();
-			bwriter.write("Mosue Pressed: " + e.getButton() + "at: " + e.getWhen() + "\n");
+			bwriter.write("Mosue Pressed: " + e.getButton() + " at: " + e.getWhen() + "\n");
 			bwriter.close();
 		}
 		catch (IOException e1)
@@ -72,7 +73,7 @@ public class GlobalMouseListenerExample implements NativeMouseInputListener
 		try
 		{
 			BufferedWriter bwriter = this.getBufferedWriter();
-			bwriter.write("Mosue Released: " + e.getButton() + "at: " + e.getWhen() + "\n");
+			bwriter.write("Mosue Released: " + e.getButton() + " at: " + e.getWhen() + "\n");
 			bwriter.close();
 		}
 		catch (IOException e1)
@@ -86,7 +87,7 @@ public class GlobalMouseListenerExample implements NativeMouseInputListener
 //		try
 //		{
 //			BufferedWriter bwriter = this.getBufferedWriter();
-//			bwriter.write("Mosue Moved: " + e.getX() + ", " + e.getY() + "at: " + e.getWhen() + "\n");
+//			bwriter.write("Mosue Moved: " + e.getX() + ", " + e.getY() + " at: " + e.getWhen() + "\n");
 //			bwriter.close();
 //		}
 //		catch (IOException e1)
@@ -97,16 +98,16 @@ public class GlobalMouseListenerExample implements NativeMouseInputListener
 
 	public void nativeMouseDragged(NativeMouseEvent e)
 	{
-//		try
-//		{
-//			BufferedWriter bwriter = this.getBufferedWriter();
-//			bwriter.write("Mosue Dragged: " + e.getX() + ", " + e.getY() + "at: " + e.getWhen() + "\n");
-//			bwriter.close();
-//		}
-//		catch (IOException e1)
-//		{
-//			e1.printStackTrace();
-//		}
+		try
+		{
+			BufferedWriter bwriter = this.getBufferedWriter();
+			bwriter.write("Mosue Dragged: " + e.getX() + ", " + e.getY() + " at: " + e.getWhen() + "\n");
+			bwriter.close();
+		}
+		catch (IOException e1)
+		{
+			e1.printStackTrace();
+		}
 	}
 	
 	public void nativeMouseWheelMoved(NativeMouseWheelEvent e)
@@ -114,7 +115,7 @@ public class GlobalMouseListenerExample implements NativeMouseInputListener
 		try
 		{
 			BufferedWriter bwriter = this.getBufferedWriter();
-			bwriter.write("Mosue Wheel Moved: " + e.getX() + ", " + e.getY() + " " + e.getWheelRotation() + " " + e.getScrollAmount() + " " + e.getScrollType() + "at: " + e.getWhen() + "\n");
+			bwriter.write("Mosue Wheel Moved: " + e.getX() + ", " + e.getY() + " " + e.getWheelRotation() + " " + e.getScrollAmount() + " " + e.getScrollType() + " at: " + e.getWhen() + "\n");
 			bwriter.close();
 		}
 		catch (IOException e1)
@@ -135,8 +136,10 @@ public class GlobalMouseListenerExample implements NativeMouseInputListener
 		try
 		{
 			GlobalScreen.registerNativeHook();
+			//overwrite existing file
+			new FileWriter("log.txt").close();
 		}
-		catch (NativeHookException ex)
+		catch (NativeHookException | IOException ex)
 		{
 			System.err.println("There was a problem registering the native hook.");
 			System.err.println(ex.getMessage());
