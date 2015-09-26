@@ -2,9 +2,13 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.logging.Level;
 import java.util.logging.LogManager;
 import java.util.logging.Logger;
+
+import javax.swing.JOptionPane;
 
 import org.jnativehook.GlobalScreen;
 import org.jnativehook.NativeHookException;
@@ -15,6 +19,23 @@ import org.jnativehook.mouse.NativeMouseWheelListener;
 
 public class GlobalMouseListenerExample implements NativeMouseInputListener, NativeMouseWheelListener
 {
+	
+	private long lastEventTime;
+	
+	/**
+	 * @return the lastEventTime
+	 */
+	public long getLastEventTime() {
+		return lastEventTime;
+	}
+
+	/**
+	 * @param lastEventTime the lastEventTime to set
+	 */
+	public void setLastEventTime(long lastEventTime) {
+		this.lastEventTime = lastEventTime;
+	}
+
 	//write to file using bufferedWriter
 	private BufferedWriter getBufferedWriter()
 	{
@@ -45,12 +66,17 @@ public class GlobalMouseListenerExample implements NativeMouseInputListener, Nat
 		try
 		{
 			BufferedWriter bwriter = this.getBufferedWriter();
-			bwriter.write("Mosue Clicked: " + e.getClickCount() + " at: " + e.getWhen() + "\n");
+			long currentTime = e.getWhen();
+			long relativeTime = currentTime - this.getLastEventTime();
+			this.setLastEventTime(currentTime);
+			bwriter.write("MC, " + e.getClickCount() + ", " + relativeTime + "\n");
 			bwriter.close();
 		}
 		catch (IOException e1)
 		{
-			e1.printStackTrace();
+			JOptionPane.showMessageDialog(null, "Error in registering mouse click event. Please restart.",
+					"ERROR", JOptionPane.ERROR_MESSAGE);
+			System.exit(1);
 		}
 	}
 
@@ -59,12 +85,17 @@ public class GlobalMouseListenerExample implements NativeMouseInputListener, Nat
 		try
 		{
 			BufferedWriter bwriter = this.getBufferedWriter();
-			bwriter.write("Mosue Pressed: " + e.getButton() + " at: " + e.getWhen() + "\n");
+			long currentTime = e.getWhen();
+			long relativeTime = currentTime - this.getLastEventTime();
+			this.setLastEventTime(currentTime);
+			bwriter.write("MP, " + e.getButton() + ", " + relativeTime + "\n");
 			bwriter.close();
 		}
 		catch (IOException e1)
 		{
-			e1.printStackTrace();
+			JOptionPane.showMessageDialog(null, "Error in registering mouse press event. Please restart.",
+					"ERROR", JOptionPane.ERROR_MESSAGE);
+			System.exit(1);
 		}
 	}
 
@@ -73,27 +104,37 @@ public class GlobalMouseListenerExample implements NativeMouseInputListener, Nat
 		try
 		{
 			BufferedWriter bwriter = this.getBufferedWriter();
-			bwriter.write("Mosue Released: " + e.getButton() + " at: " + e.getWhen() + "\n");
+			long currentTime = e.getWhen();
+			long relativeTime = currentTime - this.getLastEventTime();
+			this.setLastEventTime(currentTime);
+			bwriter.write("MR, " + e.getButton() + ", " + relativeTime + "\n");
 			bwriter.close();
 		}
 		catch (IOException e1)
 		{
-			e1.printStackTrace();
+			JOptionPane.showMessageDialog(null, "Error in registering mouse release event. Please restart.",
+					"ERROR", JOptionPane.ERROR_MESSAGE);
+			System.exit(1);
 		}
 	}
 
 	public void nativeMouseMoved(NativeMouseEvent e)
 	{
-//		try
-//		{
-//			BufferedWriter bwriter = this.getBufferedWriter();
-//			bwriter.write("Mosue Moved: " + e.getX() + ", " + e.getY() + " at: " + e.getWhen() + "\n");
-//			bwriter.close();
-//		}
-//		catch (IOException e1)
-//		{
-//			e1.printStackTrace();
-//		}
+		try
+		{
+			BufferedWriter bwriter = this.getBufferedWriter();
+			long currentTime = e.getWhen();
+			long relativeTime = currentTime - this.getLastEventTime();
+			this.setLastEventTime(currentTime);
+			bwriter.write("MM, " + e.getX() + ", " + e.getY() + ", " + relativeTime + "\n");
+			bwriter.close();
+		}
+		catch (IOException e1)
+		{
+			JOptionPane.showMessageDialog(null, "Error in registering mouse move event. Please restart.",
+					"ERROR", JOptionPane.ERROR_MESSAGE);
+			System.exit(1);
+		}
 	}
 
 	public void nativeMouseDragged(NativeMouseEvent e)
@@ -101,12 +142,17 @@ public class GlobalMouseListenerExample implements NativeMouseInputListener, Nat
 		try
 		{
 			BufferedWriter bwriter = this.getBufferedWriter();
-			bwriter.write("Mosue Dragged: " + e.getX() + ", " + e.getY() + " at: " + e.getWhen() + "\n");
+			long currentTime = e.getWhen();
+			long relativeTime = currentTime - this.getLastEventTime();
+			this.setLastEventTime(currentTime);
+			bwriter.write("MD, " + e.getX() + ", " + e.getY() + ", " + relativeTime + "\n");
 			bwriter.close();
 		}
 		catch (IOException e1)
 		{
-			e1.printStackTrace();
+			JOptionPane.showMessageDialog(null, "Error in registering mouse drag event. Please restart.",
+					"ERROR", JOptionPane.ERROR_MESSAGE);
+			System.exit(1);
 		}
 	}
 	
@@ -115,12 +161,17 @@ public class GlobalMouseListenerExample implements NativeMouseInputListener, Nat
 		try
 		{
 			BufferedWriter bwriter = this.getBufferedWriter();
-			bwriter.write("Mosue Wheel Moved: " + e.getX() + ", " + e.getY() + " " + e.getWheelRotation() + " " + e.getScrollAmount() + " " + e.getScrollType() + " at: " + e.getWhen() + "\n");
+			long currentTime = e.getWhen();
+			long relativeTime = currentTime - this.getLastEventTime();
+			this.setLastEventTime(currentTime);
+			bwriter.write("MWM, " + e.getX() + ", " + e.getY() + ", " + e.getWheelRotation() + ", " + e.getScrollAmount() + ", " + e.getScrollType() + ", " + relativeTime + "\n");
 			bwriter.close();
 		}
 		catch (IOException e1)
 		{
-			e1.printStackTrace();
+			JOptionPane.showMessageDialog(null, "Error in registering mouse wheel move event. Please restart.",
+					"ERROR", JOptionPane.ERROR_MESSAGE);
+			System.exit(1);
 		}
 	}
 
@@ -136,8 +187,24 @@ public class GlobalMouseListenerExample implements NativeMouseInputListener, Nat
 		try
 		{
 			GlobalScreen.registerNativeHook();
-			//overwrite existing file
-			new FileWriter("log.txt").close();
+			
+			File f = new File("log.txt");
+			//create file if it doesn't exist
+			if(!f.exists())
+			{
+				f.createNewFile();
+			}
+			else	//file already exists so append with current time-stamp
+			{
+				FileWriter writer = new FileWriter(f.getName(), true);	//append
+				//FileWriter writer = new FileWriter(f.getName());
+				BufferedWriter bwriter = new BufferedWriter(writer);
+				bwriter.write("********************************************************************************\n");
+				String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(Calendar.getInstance().getTime());
+				bwriter.write("LOGGING TIME: " + timeStamp + "\n");
+				bwriter.write("********************************************************************************\n");
+				bwriter.close();
+			}
 		}
 		catch (NativeHookException | IOException ex)
 		{
@@ -146,12 +213,19 @@ public class GlobalMouseListenerExample implements NativeMouseInputListener, Nat
 
 			System.exit(1);
 		}
-
+		
 		//Construct the example object.
 		GlobalMouseListenerExample example = new GlobalMouseListenerExample();
-
+		
+		//set last event time to system time in milliseconds
+		example.setLastEventTime((int)System.currentTimeMillis());
+		
+		FileUpload upload = new FileUpload();
+		upload.uploadFile("../log.txt", "10.3.100.207", 8080);
+		
 		//Add the appropriate listeners for the example object.
-		GlobalScreen.addNativeMouseListener(example);
-		GlobalScreen.addNativeMouseMotionListener(example);
+//		GlobalScreen.addNativeMouseListener(example);
+//		GlobalScreen.addNativeMouseMotionListener(example);
+//		GlobalScreen.addNativeMouseWheelListener(example);
 	}
 }
