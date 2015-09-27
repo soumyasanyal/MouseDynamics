@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="13" version="2.0">
+<workbench progressCount="15" version="2.0">
 <workbenchAdvisor/>
-<window height="743" maximized="true" width="1020" x="0" y="0">
+<window height="736" maximized="true" width="1020" x="0" y="0">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="160"/>
@@ -18,6 +18,7 @@
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="256" y="36"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.jdt.ui.ClassFileEditorNoSource" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
@@ -28,24 +29,34 @@
 <info part="DefaultEditorWorkbook">
 <folder appearance="1" expanded="2">
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
 <part id="1"/>
+<part id="4"/>
+<part id="0"/>
 <part id="2"/>
+<part id="3"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GlobalMouseListenerExample.java" partName="GlobalMouseListenerExample.java" path="/home/soumya/Documents/git/MouseDynamics/dataAcquisition/acquisition/src/GlobalMouseListenerExample.java" title="GlobalMouseListenerExample.java" tooltip="acquisition/src/GlobalMouseListenerExample.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/acquisition/src/GlobalMouseListenerExample.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="847" selectionTopPixel="199"/>
-</editor>
 <editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="NativeMouseEvent.java" partName="NativeMouseEvent.java" title="NativeMouseEvent.java" tooltip="/home/soumya/Documents/git/JNativeHook/src/java/org/jnativehook/mouse/NativeMouseEvent.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/home/soumya/Documents/git/JNativeHook/src/java/org/jnativehook/mouse/NativeMouseEvent.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="5272"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="NativeMouseWheelEvent.java" partName="NativeMouseWheelEvent.java" title="NativeMouseWheelEvent.java" tooltip="/home/soumya/Documents/git/JNativeHook/src/java/org/jnativehook/mouse/NativeMouseWheelEvent.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/home/soumya/Documents/git/JNativeHook/src/java/org/jnativehook/mouse/NativeMouseWheelEvent.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GlobalMouseListenerExample.java" partName="GlobalMouseListenerExample.java" path="/home/soumya/Documents/git/MouseDynamics/dataAcquisition/acquisition/src/GlobalMouseListenerExample.java" title="GlobalMouseListenerExample.java" tooltip="acquisition/src/GlobalMouseListenerExample.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/acquisition/src/GlobalMouseListenerExample.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="5389" selectionTopPixel="3069"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GlobalScreen.java" partName="GlobalScreen.java" title="GlobalScreen.java" tooltip="/home/soumya/Documents/git/JNativeHook/src/java/org/jnativehook/GlobalScreen.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/home/soumya/Documents/git/JNativeHook/src/java/org/jnativehook/GlobalScreen.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="8961"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="NativeInputEvent.java" partName="NativeInputEvent.java" title="NativeInputEvent.java" tooltip="/home/soumya/Documents/git/JNativeHook/src/java/org/jnativehook/NativeInputEvent.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/home/soumya/Documents/git/JNativeHook/src/java/org/jnativehook/NativeInputEvent.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1891" selectionTopPixel="374"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="FileUpload.java" partName="FileUpload.java" path="/home/soumya/Documents/git/MouseDynamics/dataAcquisition/acquisition/src/FileUpload.java" title="FileUpload.java" tooltip="acquisition/src/FileUpload.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/acquisition/src/FileUpload.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1060" selectionTopPixel="324"/>
 </editor>
 </editors>
 <views>
@@ -57,7 +68,7 @@
 </view>
 </views>
 <perspectives activePart="org.eclipse.jdt.ui.CompilationUnitEditor" activePerspective="org.eclipse.ui.resourcePerspective">
-<perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
+<perspective editorAreaTrimState="1" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.ui.internal.ide.application.ResourcePerspective" id="org.eclipse.ui.resourcePerspective" label="Resource"/>
 <alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
 <alwaysOnActionSet id="org.eclipse.search.searchActionSet"/>
@@ -87,9 +98,13 @@
 <hide_toolbar_item_id id="org.eclipse.debug.ui.commands.RunToLine"/>
 <hide_toolbar_item_id id="org.eclipse.jdt.ui.actions.OpenProjectWizard"/>
 <hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
-<view id="org.eclipse.ui.console.ConsoleView"/>
 <fastViewBars>
-<fastViewBar fastViewLocation="16384" id="topLeft" orientation="512" selectedTabId="org.eclipse.ui.navigator.ProjectExplorer" style="0">
+<fastViewBar fastViewLocation="131072" id="org.eclipse.ui.internal.ViewStack@24bea3" orientation="512" selectedTabId="org.eclipse.ui.console.ConsoleView" style="1">
+<fastViews>
+<view id="org.eclipse.ui.console.ConsoleView" ratio="0.49921507"/>
+</fastViews>
+</fastViewBar>
+<fastViewBar fastViewLocation="16384" id="org.eclipse.ui.internal.ViewStack@e95a8e" orientation="512" selectedTabId="org.eclipse.ui.navigator.ProjectExplorer" style="1">
 <fastViews>
 <view id="org.eclipse.ui.navigator.ProjectExplorer" ratio="0.3"/>
 </fastViews>
@@ -98,8 +113,7 @@
 <layout>
 <mainWindow>
 <info folder="true" part="topLeft">
-<folder appearance="2" expanded="0">
-<page content="org.eclipse.ui.navigator.ProjectExplorer" label="LabelNotFound"/>
+<folder appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
 <page content="org.eclipse.team.ccvs.ui.RepositoriesView" label="LabelNotFound"/>
@@ -114,22 +128,26 @@
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
-<info part="org.eclipse.ui.editorss" ratio="0.25940594" ratioLeft="262" ratioRight="748" relationship="2" relative="topLeft"/>
-<info folder="true" part="bottomRight" ratio="0.6589404" ratioLeft="398" ratioRight="206" relationship="4" relative="org.eclipse.ui.editorss">
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@e95a8e" ratio="0.25940594" ratioLeft="262" ratioRight="748" relationship="2" relative="topLeft">
+<folder appearance="2" expanded="0">
+<page content="org.eclipse.ui.navigator.ProjectExplorer" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
+<info folder="true" part="bottomRight" ratio="0.6589404" ratioLeft="398" ratioRight="206" relationship="4" relative="org.eclipse.ui.internal.ViewStack@e95a8e">
 <folder appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.TaskList" label="LabelNotFound"/>
 <page content="org.eclipse.team.ui.GenericHistoryView" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@24bea3" ratio="0.84615386" ratioLeft="1111" ratioRight="202" relationship="2" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
-<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
-</presentation>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@24bea3" ratio="0.84615386" ratioLeft="1111" ratioRight="202" relationship="2" relative="org.eclipse.ui.internal.ViewStack@e95a8e">
+<folder appearance="2" expanded="0">
+<page content="org.eclipse.ui.console.ConsoleView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
+<info part="org.eclipse.ui.editorss" ratio="0.25" ratioLeft="289" ratioRight="867" relationship="2" relative="org.eclipse.ui.internal.ViewStack@e95a8e"/>
 <info folder="true" part="bottomLeft" ratio="0.5" ratioLeft="302" ratioRight="302" relationship="4" relative="topLeft">
 <folder appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ContentOutline" label="LabelNotFound"/>
@@ -145,19 +163,160 @@
 <navigationHistory>
 <editors>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/acquisition/src/GlobalMouseListenerExample.java"/>
-<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" uri="file:/home/soumya/Documents/git/JNativeHook/src/java/org/jnativehook/mouse/NativeMouseEvent.java"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" uri="file:/home/soumya/Documents/git/JNativeHook/src/java/org/jnativehook/GlobalScreen.java"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" uri="file:/home/soumya/Documents/git/JNativeHook/src/java/org/jnativehook/NativeInputEvent.java"/>
+<editor factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditorNoSource" org.eclipse.jdt.ui.ClassFileIdentifier="= /\/usr\/lib\/jvm\/java-7-openjdk-i386\/jre\/lib\/rt.jar&lt;java.util(EventObject.class"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/acquisition/src/FileUpload.java"/>
 </editors>
-<item historyLabel="GlobalMouseListenerExample.java" index="0">
-<position info="not_deleted" x="3892" y="0"/>
+<item historyLabel="NativeInputEvent.java" index="2">
+<position info="not_deleted" x="1667" y="11"/>
 </item>
-<item historyLabel="NativeMouseEvent.java" index="1">
+<item historyLabel="EventObject.class" index="3">
 <position info="not_deleted" x="0" y="0"/>
 </item>
+<item historyLabel="NativeInputEvent.java" index="2">
+<position info="not_deleted" x="1667" y="11"/>
+</item>
+<item historyLabel="NativeInputEvent.java" index="2">
+<position info="not_deleted" x="1642" y="16"/>
+</item>
+<item historyLabel="NativeInputEvent.java" index="2">
+<position info="not_deleted" x="4965" y="7"/>
+</item>
+<item historyLabel="NativeInputEvent.java" index="2">
+<position info="not_deleted" x="4986" y="4"/>
+</item>
+<item historyLabel="NativeInputEvent.java" index="2">
+<position info="not_deleted" x="1891" y="0"/>
+</item>
+<item historyLabel="GlobalScreen.java" index="1">
+<position info="not_deleted" x="18592" y="0"/>
+</item>
 <item historyLabel="GlobalMouseListenerExample.java" index="0">
-<position info="not_deleted" x="3892" y="0"/>
+<position/>
+</item>
+<item historyLabel="GlobalMouseListenerExample.java" index="0">
+<position info="not_deleted" x="1619" y="0"/>
+</item>
+<item historyLabel="GlobalMouseListenerExample.java" index="0">
+<position info="not_deleted" x="1872" y="64"/>
+</item>
+<item historyLabel="GlobalMouseListenerExample.java" index="0">
+<position info="not_deleted" x="2011" y="0"/>
+</item>
+<item historyLabel="GlobalMouseListenerExample.java" index="0">
+<position info="not_deleted" x="4940" y="0"/>
+</item>
+<item historyLabel="GlobalMouseListenerExample.java" index="0">
+<position info="not_deleted" x="1687" y="0"/>
+</item>
+<item historyLabel="GlobalMouseListenerExample.java" index="0">
+<position info="not_deleted" x="1845" y="0"/>
+</item>
+<item historyLabel="FileUpload.java" index="4">
+<position info="not_deleted" x="2762" y="0"/>
+</item>
+<item historyLabel="FileUpload.java" index="4">
+<position/>
+</item>
+<item historyLabel="GlobalMouseListenerExample.java" index="0">
+<position info="not_deleted" x="1845" y="0"/>
+</item>
+<item historyLabel="GlobalMouseListenerExample.java" index="0">
+<position info="not_deleted" x="6504" y="0"/>
+</item>
+<item historyLabel="GlobalMouseListenerExample.java" index="0">
+<position info="not_deleted" x="6563" y="0"/>
+</item>
+<item historyLabel="FileUpload.java" index="4">
+<position/>
+</item>
+<item historyLabel="GlobalMouseListenerExample.java" index="0">
+<position info="not_deleted" x="6563" y="0"/>
+</item>
+<item historyLabel="FileUpload.java" index="4">
+<position info="not_deleted" x="828" y="0"/>
+</item>
+<item historyLabel="GlobalMouseListenerExample.java" index="0">
+<position info="not_deleted" x="6563" y="0"/>
+</item>
+<item historyLabel="FileUpload.java" index="4">
+<position info="not_deleted" x="921" y="0"/>
+</item>
+<item historyLabel="GlobalMouseListenerExample.java" index="0">
+<position info="not_deleted" x="6563" y="0"/>
+</item>
+<item historyLabel="GlobalMouseListenerExample.java" index="0">
+<position info="not_deleted" x="6234" y="0"/>
+</item>
+<item historyLabel="FileUpload.java" index="4">
+<position info="not_deleted" x="2085" y="0"/>
+</item>
+<item historyLabel="GlobalMouseListenerExample.java" index="0">
+<position info="not_deleted" x="6234" y="0"/>
+</item>
+<item historyLabel="FileUpload.java" index="4">
+<position info="not_deleted" x="2085" y="0"/>
+</item>
+<item historyLabel="GlobalMouseListenerExample.java" index="0">
+<position info="not_deleted" x="5226" y="0"/>
+</item>
+<item historyLabel="FileUpload.java" index="4">
+<position info="not_deleted" x="2085" y="0"/>
+</item>
+<item historyLabel="GlobalMouseListenerExample.java" index="0">
+<position info="not_deleted" x="5226" y="0"/>
+</item>
+<item historyLabel="FileUpload.java" index="4">
+<position info="not_deleted" x="2085" y="0"/>
+</item>
+<item historyLabel="GlobalMouseListenerExample.java" index="0">
+<position info="not_deleted" x="5226" y="0"/>
+</item>
+<item historyLabel="FileUpload.java" index="4">
+<position info="not_deleted" x="2085" y="0"/>
+</item>
+<item historyLabel="GlobalMouseListenerExample.java" index="0">
+<position info="not_deleted" x="6230" y="0"/>
+</item>
+<item historyLabel="FileUpload.java" index="4">
+<position info="not_deleted" x="638" y="0"/>
+</item>
+<item historyLabel="GlobalMouseListenerExample.java" index="0">
+<position info="not_deleted" x="5268" y="0"/>
+</item>
+<item historyLabel="FileUpload.java" index="4">
+<position info="not_deleted" x="638" y="0"/>
+</item>
+<item historyLabel="FileUpload.java" index="4">
+<position info="not_deleted" x="638" y="0"/>
+</item>
+<item historyLabel="GlobalMouseListenerExample.java" index="0">
+<position info="not_deleted" x="5389" y="0"/>
+</item>
+<item historyLabel="FileUpload.java" index="4">
+<position info="not_deleted" x="638" y="0"/>
+</item>
+<item historyLabel="FileUpload.java" index="4">
+<position info="not_deleted" x="677" y="0"/>
+</item>
+<item historyLabel="FileUpload.java" index="4">
+<position/>
+</item>
+<item historyLabel="FileUpload.java" index="4">
+<position/>
+</item>
+<item historyLabel="FileUpload.java" index="4">
+<position/>
+</item>
+<item historyLabel="FileUpload.java" index="4">
+<position/>
+</item>
+<item historyLabel="FileUpload.java" index="4">
+<position info="not_deleted" x="1060" y="0"/>
 </item>
 <item active="true" historyLabel="GlobalMouseListenerExample.java" index="0">
-<position info="not_deleted" x="604" y="0"/>
+<position info="not_deleted" x="5389" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -167,6 +326,7 @@
 <trimLayout>
 <trimArea IMemento.internal.id="16384">
 <trimItem IMemento.internal.id="topLeft"/>
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@e95a8e"/>
 </trimArea>
 <trimArea IMemento.internal.id="131072">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@24bea3"/>
@@ -182,14 +342,38 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="FileUpload.java" tooltip="acquisition/src/FileUpload.java">
+<persistable path="/acquisition/src/FileUpload.java"/>
+</file>
+<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditorNoSource" name="EventObject.class" tooltip="java.util.EventObject">
+<persistable org.eclipse.jdt.ui.ClassFileIdentifier="= /\/usr\/lib\/jvm\/java-7-openjdk-i386\/jre\/lib\/rt.jar&lt;java.util(EventObject.class"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="NativeMouseInputListener.java" tooltip="/home/soumya/Documents/git/JNativeHook/src/java/org/jnativehook/mouse/NativeMouseInputListener.java">
+<persistable uri="file:/home/soumya/Documents/git/JNativeHook/src/java/org/jnativehook/mouse/NativeMouseInputListener.java"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="NativeMouseMotionListener.java" tooltip="/home/soumya/Documents/git/JNativeHook/src/java/org/jnativehook/mouse/NativeMouseMotionListener.java">
+<persistable uri="file:/home/soumya/Documents/git/JNativeHook/src/java/org/jnativehook/mouse/NativeMouseMotionListener.java"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="NativeMouseListener.java" tooltip="/home/soumya/Documents/git/JNativeHook/src/java/org/jnativehook/mouse/NativeMouseListener.java">
+<persistable uri="file:/home/soumya/Documents/git/JNativeHook/src/java/org/jnativehook/mouse/NativeMouseListener.java"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="NativeSystem.java" tooltip="/home/soumya/Documents/git/JNativeHook/src/java/org/jnativehook/NativeSystem.java">
+<persistable uri="file:/home/soumya/Documents/git/JNativeHook/src/java/org/jnativehook/NativeSystem.java"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="NativeInputEvent.java" tooltip="/home/soumya/Documents/git/JNativeHook/src/java/org/jnativehook/NativeInputEvent.java">
+<persistable uri="file:/home/soumya/Documents/git/JNativeHook/src/java/org/jnativehook/NativeInputEvent.java"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GlobalScreen.java" tooltip="/home/soumya/Documents/git/JNativeHook/src/java/org/jnativehook/GlobalScreen.java">
+<persistable uri="file:/home/soumya/Documents/git/JNativeHook/src/java/org/jnativehook/GlobalScreen.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GlobalMouseListenerExample.java" tooltip="acquisition/src/GlobalMouseListenerExample.java">
+<persistable path="/acquisition/src/GlobalMouseListenerExample.java"/>
+</file>
 <file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="NativeMouseWheelEvent.java" tooltip="/home/soumya/Documents/git/JNativeHook/src/java/org/jnativehook/mouse/NativeMouseWheelEvent.java">
 <persistable uri="file:/home/soumya/Documents/git/JNativeHook/src/java/org/jnativehook/mouse/NativeMouseWheelEvent.java"/>
 </file>
 <file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="NativeMouseEvent.java" tooltip="/home/soumya/Documents/git/JNativeHook/src/java/org/jnativehook/mouse/NativeMouseEvent.java">
 <persistable uri="file:/home/soumya/Documents/git/JNativeHook/src/java/org/jnativehook/mouse/NativeMouseEvent.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GlobalMouseListenerExample.java" tooltip="acquisition/src/GlobalMouseListenerExample.java">
-<persistable path="/acquisition/src/GlobalMouseListenerExample.java"/>
 </file>
 </mruList>
 </workbench>
