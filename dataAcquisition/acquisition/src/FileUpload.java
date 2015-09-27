@@ -1,96 +1,150 @@
+import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.net.InetAddress;
+import java.io.InputStreamReader;
+import java.net.InetSocketAddress;
+import java.net.Proxy;
+import java.util.Locale;
 
-import org.apache.commons.net.ftp.FTP;
-import org.apache.commons.net.ftp.FTPClient;
-import org.apache.commons.net.ftp.FTPHTTPClient;
-/**
-* A program that demonstrates how to upload files from local computer* to a remote FTP server using Apache Commons Net API.
-* @author www.codejava.net*/
+import com.dropbox.client2.DropboxAPI;
+import com.dropbox.client2.session.AccessTokenPair;
+import com.dropbox.client2.session.AppKeyPair;
+import com.dropbox.client2.session.RequestTokenPair;
+import com.dropbox.client2.session.Session.AccessType;
+import com.dropbox.client2.session.WebAuthSession;
+import com.dropbox.core.DbxAccountInfo;
+import com.dropbox.core.DbxAppInfo;
+import com.dropbox.core.DbxAuthFinish;
+import com.dropbox.core.DbxClient;
+import com.dropbox.core.DbxEntry;
+import com.dropbox.core.DbxException;
+import com.dropbox.core.DbxHost;
+import com.dropbox.core.DbxRequestConfig;
+import com.dropbox.core.DbxWebAuthNoRedirect;
+import com.dropbox.core.DbxWriteMode;
+import com.dropbox.core.http.HttpRequestor;
+import com.dropbox.core.http.StandardHttpRequestor;
 
 public class FileUpload
 {
-	public void uploadFile(String fileLocation, String proxyHost, int proxyPort)
+
+	private static final String DROP_BOX_APP_KEY = "3wywjt2ldfhnsb5";
+	private static final String DROP_BOX_APP_SECRET = "jk2if1p5c2w86d3";
+	DbxClient dbxClient;
+
+	public DbxClient authDropbox(String dropBoxAppKey, String dropBoxAppSecret)
+			throws IOException, DbxException
 	{
-//		String server = "203.110.246.230";
-//		String server = "10.109.11.91";
-		String server = "www.filegenie.com";
-		int port = 21;
-		String user = "soumya";
-		String pass = "1253-JWTI";
-		FTPClient ftpClient;
-		if(proxyHost !=null)
-		{
-			System.out.println("Using HTTP proxy server: " + proxyHost);
-			ftpClient = new FTPHTTPClient(proxyHost, proxyPort);
-		}
-		else
-		{
-			ftpClient = new FTPClient();
-		}
+		DbxAppInfo dbxAppInfo = new DbxAppInfo(dropBoxAppKey, dropBoxAppSecret);
+		InetSocketAddress addr = new InetSocketAddress("10.3.100.207", 8080);
+		Proxy proxy = new Proxy(Proxy.Type.HTTP, addr);
+		StandardHttpRequestor proxyRequest = new StandardHttpRequestor(proxy);
+		DbxRequestConfig dbxRequestConfig = new DbxRequestConfig(
+				"JavaDropboxTutorial/1.0", Locale.getDefault().toString(), proxyRequest);
+		DbxWebAuthNoRedirect dbxWebAuthNoRedirect = new DbxWebAuthNoRedirect(
+				dbxRequestConfig, dbxAppInfo);
+		String authorizeUrl = dbxWebAuthNoRedirect.start();
+		System.out.println("1. Authorize: Go to URL and click Allow : "
+				+ authorizeUrl);
+		System.out
+				.println("2. Auth Code: Copy authorization code and input here ");
+		String dropboxAuthCode = new BufferedReader(new InputStreamReader(
+				System.in)).readLine().trim();
+		DbxAuthFinish authFinish = dbxWebAuthNoRedirect.finish(dropboxAuthCode);
+		String authAccessToken = authFinish.accessToken;
+		dbxClient = new DbxClient(dbxRequestConfig, authAccessToken);
+		System.out.println("Dropbox Account Name: "
+				+ dbxClient.getAccountInfo().displayName);
+		
+		/*************************************************************************************************************/
+//		AccessType ACCESS_TYPE = AccessType.APP_FOLDER;
+//		DropboxAPI mDBApi;
+//		AppKeyPair appKeys = new AppKeyPair(DROP_BOX_APP_KEY, DROP_BOX_APP_SECRET);
+//		WebAuthSession session = new WebAuthSession(appKeys, ACCESS_TYPE);
+//		mDBApi = new DropboxAPI(session);
+//		System.out.println("Please go to this URL and hit \"Allow\": " + mDBApi.getSession().getAuthInfo().url); // tell user to go to app allowance URL
+//		AccessTokenPair tokenPair = mDBApi.getSession().getAccessTokenPair();
+//		// wait for user to allow app in above URL, 
+//		// then return back to executing code below
+//		RequestTokenPair tokens = new RequestTokenPair(tokenPair.key, tokenPair.secret);
+//		((WebAuthSession) mDBApi.getSession()).retrieveWebAccessToken(tokens); // completes initial auth
+//
+//		//these two calls will retrive access tokens for future use
+//		String Key = session.getAccessTokenPair().key;    // store String returned by this call somewhere
+//		String Secret = session.getAccessTokenPair().secret; // same for this line
+		/*************************************************************************************************************************/
+		
+		return dbxClient;
+	}
+
+	/* returns Dropbox size in GB */
+	public long getDropboxSize() throws DbxException
+	{
+		long dropboxSize = 0;
+		DbxAccountInfo dbxAccountInfo = dbxClient.getAccountInfo();
+		// in GB :)
+		dropboxSize = dbxAccountInfo.quota.total / 1024 / 1024 / 1024;
+		return dropboxSize;
+	}
+
+	public void uploadToDropbox(String fileName) throws DbxException,
+			IOException
+	{
+		File inputFile = new File(fileName);
+		FileInputStream fis = new FileInputStream(inputFile);
 		try
 		{
-			System.out.println("Starting...");
-			ftpClient.connect(server, port);
-			System.out.println("Starting 1...");
-			ftpClient.login(user, pass);
-			System.out.println("Starting 2...");
-			ftpClient.enterLocalPassiveMode();
-			ftpClient.setFileType(FTP.ASCII_FILE_TYPE);
-			// APPROACH #1: uploads first file using an InputStream
-			File firstLocalFile = new File(fileLocation);
-			String firstRemoteFile = "log.zip";
-			InputStream inputStream = new FileInputStream(firstLocalFile);
-			System.out.println("Start uploading first file");
-			boolean done = ftpClient.storeFile(firstRemoteFile, inputStream);
-			inputStream.close();
-			if(done)
-			{
-				System.out.println("The first file is uploaded successfully.");
-			}
-			// APPROACH #2: uploads second file using an OutputStream
-//			File secondLocalFile = new File("E:/Test/Report.doc");
-//			String secondRemoteFile = "test/Report.doc";
-//			inputStream = new FileInputStream(secondLocalFile);
-//			System.out.println("Start uploading second file");
-//			OutputStream outputStream = ftpClient.storeFileStream(secondRemoteFile);
-//			byte[] bytesIn = new byte[4096];
-//			int read = 0;
-//			while((read = inputStream.read(bytesIn)) != -1)
-//			{
-//				outputStream.write(bytesIn, 0, read);
-//			}
-//			inputStream.close();
-//			outputStream.close();
-//			boolean completed = ftpClient.completePendingCommand();
-//			if(completed)
-//			{
-//				System.out.println("The second file is uploaded successfully.");
-//			}
-		}
-		catch(IOException ex)
-		{
-			System.out.println("Error: " + ex.getMessage());
-			ex.printStackTrace();
+			DbxEntry.File uploadedFile = dbxClient.uploadFile("/" + fileName,
+					DbxWriteMode.add(), inputFile.length(), fis);
+			String sharedUrl = dbxClient.createShareableUrl("/" + fileName);
+			System.out.println("Uploaded: " + uploadedFile.toString() + " URL "
+					+ sharedUrl);
 		}
 		finally
 		{
-			try
-			{
-				if(ftpClient.isConnected())
-				{
-					ftpClient.logout();
-					ftpClient.disconnect();
-				}
-			}
-			catch(IOException ex)
-			{
-				ex.printStackTrace();
-			}
+			fis.close();
 		}
+	}
+
+	public void createFolder(String folderName) throws DbxException
+	{
+		dbxClient.createFolder("/" + folderName);
+	}
+
+	public void listDropboxFolders(String folderPath) throws DbxException
+	{
+		DbxEntry.WithChildren listing = dbxClient
+				.getMetadataWithChildren(folderPath);
+		System.out.println("Files List:");
+		for (DbxEntry child : listing.children)
+		{
+			System.out.println("	" + child.name + ": " + child.toString());
+		}
+	}
+
+	public void downloadFromDropbox(String fileName) throws DbxException,
+			IOException
+	{
+		FileOutputStream outputStream = new FileOutputStream(fileName);
+		try
+		{
+			DbxEntry.File downloadedFile = dbxClient.getFile("/" + fileName,
+					null, outputStream);
+			System.out.println("Metadata: " + downloadedFile.toString());
+		}
+		finally
+		{
+			outputStream.close();
+		}
+	}
+
+	public void fileUploadUtil() throws IOException, DbxException
+	{
+		FileUpload javaDropbox = new FileUpload();
+		javaDropbox.authDropbox(DROP_BOX_APP_KEY, DROP_BOX_APP_SECRET);
+		javaDropbox.createFolder("tutorial");
+		javaDropbox.uploadToDropbox("test.jpg");
 	}
 }

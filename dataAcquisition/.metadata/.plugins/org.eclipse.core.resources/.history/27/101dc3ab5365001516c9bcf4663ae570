@@ -327,7 +327,7 @@ public class GlobalMouseListenerExample implements NativeMouseInputListener, Nat
 		FileUpload upload = new FileUpload();
 		try
 		{
-			upload.fileUploadUtil();
+			upload.fileUploadUtil()
 		}
 		catch(Exception e)
 		{
